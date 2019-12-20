@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RENT</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/desctop.css">
+    <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+
+    <!--Mobile,Middle-->
+    <div class="header-mobile">
+        <div class="main-menu-mobile">
+            <input type="checkbox" id="dws-menu">
+            <div class="leb-menu">
+                <label for="dws-menu"><img src="img/burger-menu.png" alt=""></label>
+            </div>
+            <nav class="burger-menu-mobile">
+                <ul>
+                    <li class="profile-mobile"><img src="" alt=""> <a href="">Профиль</a></li>
+                    <li><a href="">Профиль</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Баланс</a></li>
+                    <li><a href="">Настройки</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="profile-menu-mobile">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a class="nav-link" href="#cartModal" data-toggle="modal">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-badge" class="badge badge-light"></span>
+            </a>
+            <a href="#"><i class="fas fa-sliders-h"></i></a>
+            <a href="#"><i class="fas fa-user-circle"></i></a>
+
+        </div>
+    </div>
+
+    <!--desctop-->
+    <div class="header-desctop">
+        <div class="main-menu-desctop">
+            <a class="logo" href="">RENT</a>
+            <img src="" alt="">
+            <a class="header-home" href="index.html">Главная</a>
+            <a class="header-reviews" href="reviews.html">Отзывы</a>
+            <a class="header-shop" href="shop.html">Наши&nbspмагазины</a>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="profile-menu-desctop">
+            <div>
+                <a class="nav-link" href="#cartModal" data-toggle="modal">
+                    <i class="fas fa-shopping-cart"></i>
+                    Cart<span id="cart-badge" class="badge badge-light"></span>
+                </a>
+            </div>
+
+            <!-- <a class="lang" href="#">RU</a>
+                <a href="#"><i class="far fa-heart"></i></a> -->
+            <!-- <a class="nav-link" href="#cartModal" data-toggle="modal">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-badge" class="badge badge-light"></span>
+                </a> -->
+            <!-- <a href="#"><i class="fas fa-sliders-h"></i></a>
+                <<a class="profile-desctop" href="">Профиль</a>  -->
+
+        </div>
+    </div>
+    </header>
+    <main>
+        <!--Mobile-->
+        <div class="container-mobile">
+            <section>
+                <h1>Просмотренные товары:</h1>
+                <div class="viewed-products">
+                    <div class="mySlides fade">
+                        <img src="img/products/item.jpg" alt=""></img>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/products/item2.jpg" alt=""></img>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/products/item.jpg" alt=""></img>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="img/products/item2.jpg" alt=""></img>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1>Рекомендации:</h1>
+                <div class="recommendations">
+                </div>
+            </section>
+        </div>
+        <!--Desctop-->
+        <div class="container-desctop">
+            <div class="menu-setting-desctop">
+                <div class="filter-desctop col-8">
+                    <a href="">Топ</a>
+                    <a href="">Фильтр</a>
+                    <h3>Кол-во товаров</h3>
+                    <div class="main-search-desctop">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <input class="button-desctop" type="button" value="Поиск">
+            </div>
+            <!--Products-->
+            <div class="row products-container">
+                <!--Products are dynamically generated here-->
+            </div>
+        </div>
+        </div>
+    </main>
+    <!-- Modal Product Info -->
+    <div class="modal fade" id="productInfoModal" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="card-img-top" src="" alt="">
+                    <h4 class="card-title"></h4>
+                    <p class="card-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary buy" data-id="id">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MOdel Card-->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form>
+                            <div class="form-group row">
+                                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                <input class="form-control col-8" type="text" id="client-name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                <input class="form-control col-8" type="email" id="client-email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"  integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7ea3cb292b.js" crossorigin="anonymous"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/alert-window.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

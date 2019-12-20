@@ -1,0 +1,60 @@
+[
+    {
+        "id": "1",
+        "title": "Item1",
+        "image": "item.jpg",
+        "description": "Large drone for most critical missions. Can carry load.",
+        "price": 499.99
+    },
+    {
+        "id": "2",
+        "title": "Item2",
+        "image": "item2.jpg",
+        "description": "Small drone. Can fly undetected.",
+        "price": 199.99
+    },
+    {
+        "id": "3",
+        "title": "Item3",
+        "image": "item.jpg",
+        "description": "Nice-looking drone in blue color. Has built-in HD camera",
+        "price": 249.99
+    },
+    {
+        "id": "4",
+        "title": "Item4",
+        "image": "item2.jpg",
+        "description": "Nice-looking drone in red color",
+        "price": 229.99
+    },
+    {
+        "id": "5",
+        "title": "Item5",
+        "image": "item.jpg",
+        "description": "Black gyroboard to match your style",
+        "price": 729.99
+    },
+    {
+        "id": "6",
+        "title": "Item6",
+        "image": "item2.jpg",
+        "description": "White gyroboard with blue lights",
+        "price": 829.99
+    },
+    {
+        "id": "7",
+        "title": "Item7",
+        "image": "item.jpg",
+        "description": "Best crossover in the World",
+        "price": 99999.99
+    },
+    {
+        "id": "8",
+        "title": "Item8",
+        "image": "item2.jpg",
+        "description": "Best sports car in the World",
+        "price": 249999.99
+    }
+
+   
+]
