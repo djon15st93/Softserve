@@ -93,7 +93,6 @@
     }
 
     .header-mobile {
-        padding: auto;
         background-color: #353a4e;
         display: flex;
 
@@ -170,10 +169,4 @@
         height: 15px;
         border-radius: 15px;
     }
-}
-
-
-
-
-
 }
